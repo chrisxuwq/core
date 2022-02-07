@@ -6,12 +6,6 @@ lock_timeout: 30s
 cert_path: "/etc/eru/tls"
 max_concurrency: 20
 
-grpc:
-    max_concurrent_streams: 100
-    max_recv_msg_size: 30 # will covert to MBytes
-    service_discovery_interval: 5s  # WatchServiceStatus push interval
-    service_heartbeat_interval: 5s  # RegisterService heartbeat
-
 store: etcd
 
 etcd:
